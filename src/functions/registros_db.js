@@ -1,6 +1,6 @@
 
 import { DB } from '../auth/FirebaseContext'
-import { collection, addDoc, doc, getDoc, query, where, getDocs } from "firebase/firestore";
+import { collection, addDoc, doc, getDoc, query, getDocs } from "firebase/firestore";
 
 
 // obtener tipo de habitaciones 
@@ -70,7 +70,7 @@ export const ObtenerRegistroName = async () => {
 
     const docRef = doc(DB, "Registros");
     const docSnap = await getDoc(docRef);
-    const response = [];
+
     if (docSnap.exists()) {
       console.log('Document data: ', docSnap.data());
     } else {

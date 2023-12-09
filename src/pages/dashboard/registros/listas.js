@@ -5,7 +5,6 @@ import { Container, Box, Button } from '@mui/material';
 // routes
 import { PATH_DASHBOARD } from '../../../routes/paths';
 // _mock_
-import { _userCards } from '../../../_mock/arrays';
 // layouts
 import DashboardLayout from '../../../layouts/dashboard';
 // components

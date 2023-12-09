@@ -7,7 +7,6 @@ import DashboardLayout from '../../../layouts/dashboard';
 import { useSettingsContext } from '../../../components/settings';
 import { PATH_DASHBOARD } from '../../../routes/paths';
 import Iconify from '../../../components/iconify';
-import { useDispatch, useSelector } from '../../../redux/store';
 import { useEffect, useState } from 'react';
 // sections
 import {
@@ -74,7 +73,7 @@ export default function RegistrosCrear() {
         <Card sx={{ p: 3 }}>
 
           <RegistroForm
-            onCrear={funcionPrueba}
+            // onCrear={funcionPrueba}
             onCancel={cerrarVentanaModal}
           >
 
@@ -85,7 +84,7 @@ export default function RegistrosCrear() {
         <Dialog fullWidth maxWidth="xs" open={Estado} onClose={cerrarVentanaModal}>
           <DialogTitle>Crear Registro</DialogTitle>
           <RegistroForm
-            onCrear={funcionPrueba}
+            // onCrear={funcionPrueba}
             onCancel={cerrarVentanaModal}
           >
 
